@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f7f9 !important;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+a, a:visited, a:link {
+    color: #000;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+a:hover {
+    color: #00000080
+}
+
+#kc-locale-dropdown {
+    background: #fff;
+    border-radius: 20px;
+    min-width: 120px;
+    min-height: 50px;
+    padding: 5px 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+}
+
+#kc-locale-dropdown a {
+    color: #000;
+}
+
+#kc-locale-dropdown a#kc-current-locale-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#kc-locale-dropdown a#kc-current-locale-link div.locale-text {
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 5px;
+}
+
+#kc-locale-dropdown a#kc-current-locale-link div.flag-image {
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border: 1px #00000015 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kc-locale-dropdown a#kc-current-locale-link div.flag-image > img {
+    height: 25px;
+    width: 25px;
+    max-width: none;
+}
+
+#kc-locale-dropdown > ul {
+
+    margin: -5px 0 0 0;
+    padding: 0;
+    display: none;
+    max-height: 300px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -90%;
+    background: #fff;
+    width: 90%;
+}
+#kc-locale-dropdown > ul > li {
+}
+#kc-locale-dropdown > ul > li > * {
+    transition: 200ms background;
+    padding: 2px 5px;
+}
+
+#kc-locale-dropdown > ul > li.active:hover > * {
+    cursor: not-allowed;
+}
+
+#kc-locale-dropdown > ul:hover,
+#kc-locale-dropdown:hover > ul {
+    display: block;
+}
+
+.navbar-title {
+    height: 25px;
+    background-repeat: no-repeat;
+    width: 123px;
+    margin: 3px 10px 5px;
+    text-indent: -99999px;
+}
+
+div.bs-sidebar {
+    background: #fff;
+    padding: 10px 5px;
+    width: 100%;
+    border-bottom: 1px #00000015 solid;
+}
+
+div.bs-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+div.bs-sidebar ul > li a {
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color .5s, color 0.2s;
+    background-color: #fff;
+}
+
+div.bs-sidebar ul > li a:hover {
+    background-color: #00000005;
+}
+
+.navbar-pf {
+    height: 100px;
+    background: #ffffff00;
+    border: 0;
+}
+
+.navbar-pf .navbar-utility {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-pf .navbar-header {
+    height: 100px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-pf .navbar-header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-pf .navbar-utility > li > a, .navbar-pf .navbar-utility > li > button {
+    border: none;
+}
+
+body > .container {
+    min-height: calc(100vh - 34px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1.navbar-title {
+    text-indent: initial;
+    color: #00000098;
+}
+
+body > .container div.content-area {
+    background: #fff;
+    width: 100%;
+    min-height: calc(50vh - 34px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.content-area div.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div.content-area div.row > div:nth-child(1),
+div.content-area div.row > div:nth-child(2) {
+    width: 100%;
+}
+
+span.required {
+    color: #ff0000;
+}
+
+form {
+    min-width: 500px;
+}
+
+form div.form-group {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0 !important;
+}
+
+form div.form-group > :nth-child(2) {
+    max-width: 100%;
+    width: 100%;
+}
+
+div#kc-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+form input[type=text],
+form input[type=password] {
+    background-color: #f5f7f9;
+    outline: 0;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+}
+
+.pf-c-button, #kc-form-buttons .btn {
+    height: 60px;
+    font-size: 21px;
+    transition: background-color 0.2s;
+    outline: none;
+    border: 1px #00000005 solid;
+}
+
+.pf-c-button.pf-m-primary, #kc-form-buttons .btn.btn-primary {
+    background: #003857 !important;
+}
+
+.pf-c-button.pf-m-primary:hover, #kc-form-buttons .btn.btn-primary:hover {
+    background: #00385780 !important;
+}
+
+header.navbar-pf .navbar-utility > li > a, .navbar-pf .navbar-utility > li > button {
+    color: #000000 !important
+}
+
+header.navbar-pf .navbar-utility > li > a, .navbar-pf .navbar-utility > li > button:hover {
+    color: #00000070 !important;
+}

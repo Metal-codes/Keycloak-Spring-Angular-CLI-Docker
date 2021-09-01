@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Mono&display=swap');
+
+/**
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+**/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f7f9 !important;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+a, a:visited, a:link {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #000;
+  text-decoration: none;
+  transition: color .5s;
+}
+
+a:hover {
+  color: #00000080
+}

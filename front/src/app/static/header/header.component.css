@@ -1,0 +1,52 @@
+div.header {
+  width: 90%;
+  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.header div.logo {
+  font-size: 25px;
+  color: #000000;
+  transition: color 500ms;
+  cursor: pointer;
+}
+
+div.header div.logo:hover {
+  color: #00000015;
+}
+
+div.header div.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.header div.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.header div.menu ul li a {
+  padding: 5px 10px;
+  color: #0061DE;
+  font-size: 23px;
+}
+
+div.header div.menu ul li a:hover {
+  color: #0061DE45;
+}
+
+a.button {
+  background: #0061DE;
+  color: #fff !important;
+  border-radius: 5px;
+}
+a.button:hover {
+  background: #0061DE45;
+}

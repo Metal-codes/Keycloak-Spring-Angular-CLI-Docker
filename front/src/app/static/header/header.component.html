@@ -1,0 +1,26 @@
+<div class="header">
+  <a routerLink="./home">
+    <div class="logo">
+      Test
+    </div>
+  </a>
+  <div class="menu">
+    <ul>
+      <li>
+        <a routerLink="/home">Home</a>
+      </li>
+    </ul>
+    <ul *ngIf="isLoggedIn && user != undefined">
+      <li><a href="{{profileLink}}">{{user.email}}</a></li>
+      <li><a routerLink="/user/logout">Logout</a></li>
+    </ul>
+    <ul *ngIf="!isLoggedIn">
+      <li>
+        <a routerLink="/user/login">Login</a>
+      </li>
+      <li>
+        <a class="button" routerLink="/user/register">Register</a>
+      </li>
+    </ul>
+  </div>
+</div>

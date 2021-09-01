@@ -1,0 +1,6 @@
+#FileLock
+#Wed Sep 01 20:41:20 GMT 2021
+server=172.19.0.3\:40839
+hostName=keycloak-srv
+method=file
+id=17ba3183d1fcc721e8dfde858bdf717c4be407f6c29
